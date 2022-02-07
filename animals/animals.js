@@ -9,3 +9,7 @@ const says = document.getElementById('saying');
 const params = new URLSearchParams (window.location.search);
 const animal = findById(params.get('id'), animals);
 
+
+name.textContent = animal.name;
+img.src = `../assets/${animal.type}.svg`;
+says.textContent = animal.says;
